@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Explore the World with Travel Adventures</h1>
+            <p>Making Your Dream Journeys a Reality</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Destinations</h2>
+        <div class="gallery">
+            <button onclick="portfolio_turnstile(0)">prev</button>
+
+            <div class="gallery-item">
+                <img id="portfolio_image" src="destination.jpeg" alt="Destination 1">
+                <p id="portfolio_name">Breathtaking Beach Getaway</p>
+            </div>
+            <button onclick="portfolio_turnstile(1)">next</button>
+
+        </div>
+    </section>
+
+    <!-- Venue Collaborations Section -->
+    <section id="venues">
+        <h2>Our Partner Resorts</h2>
+        <div class="gallery">
+            <button onclick="venue_turnstile(0)">prev</button>
+
+            <div class="gallery-item">
+                <img id="venue_image" src="resort.jpeg" alt="Resort 1">
+                <p id="venue_name">Oceanfront Paradise Resort</p>
+            </div>
+            <button onclick="venue_turnstile(1)">next</button>
+
+        </div>
+
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>What Our Clients Say</h2>
+        <div class="reviews">
+            <blockquote>
+                <p id="review_text">"Travel Adventures planned our vacation perfectly! The views were stunning, and the experience was unforgettable."</p>
+                <cite id="reviewer">- Sarah & Mark</cite>
+            </blockquote>
+        </div>
+        <button onclick="review_turnstile(1)">next</button>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Adventures</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
